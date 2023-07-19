@@ -1,0 +1,28 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "alfcrm",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.63.6",
+    "style-loader": "^3.3.3",
+    "webpack-stream": "^7.0.0"
+  }
+}

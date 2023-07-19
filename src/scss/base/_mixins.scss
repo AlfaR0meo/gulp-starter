@@ -1,0 +1,48 @@
+// ■■■■■ МИКСИНЫ ■■■■■■■■■■■■■■■■■■■■■
+
+// Adaptive value (font-size, margin-, padding-, CSS variables)
+@mixin adaptive-value($property, $startSize, $minSize, $type) {
+    $sizeDiff: $startSize - $minSize;
+    @if $type==1 {
+        // Если меньше контейнера
+        #{$property}: $startSize + px;
+        @media (max-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$sizeDiff} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+        }
+    } @else if $type==2 {
+        // Если больше контейнера
+        #{$property}: $startSize + px;
+        @media (min-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$sizeDiff} * ((100vw - 320px) / #{$maxWidth - 320}));
+        }
+    } @else {
+        // Всегда
+        #{$property}: calc(#{$minSize + px} + #{$sizeDiff} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+}
+
+
+// @mixin animation_1 { // миксин без параметров
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: scaleY(0);
+//     transform-origin: 50% 0;
+//     transition: 0.3s ease;
+//     &.open {
+//         opacity: 1;
+//         visibility: visible;
+//         transform: scaleY(1);
+//     }
+// }
+// Как использовать
+// .class {
+    // @include animation_1;
+// }
+
+// - & _ равны в SCSS (по историческим причинам)
+
+// интерполяция строк в SCSS - #{}
+
+// @function summa($num1, $num2) {
+//     @return ($num1 + $num2) + px;
+// }

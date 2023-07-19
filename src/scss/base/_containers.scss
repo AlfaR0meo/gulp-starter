@@ -1,0 +1,19 @@
+/* ■■■■■ КОНТЕЙНЕРЫ ■■■■■■■■■■■■■■■■■■ */
+.container {
+    max-width: 1000px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    
+    &--xs {
+        max-width: 320px;
+    }
+    &--sm {
+        max-width: 500px;
+    }
+    &--md {
+        max-width: 800px;
+    }
+    &--lg {
+        max-width: 1200px;
+    }
+}

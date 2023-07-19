@@ -1,0 +1,17 @@
+// ■■■■■ ПЕРЕМЕННЫЕ ■■■■■■■■■■■■■■■■■■
+$minWidth: 320; // Минимальная ширина страницы, px
+$maxWidth: 1600; // Ширина полотна (макета), px
+$maxWidthContainer: 1000; // Ширина контейнера вместе с отступами, px
+
+$mobile-breakpoint: 400px; 
+// @media (max-width: $mobile-breakpoint) {
+//     .block {
+//         background-color: hsl(0 70% 50%);
+//     }
+// }
+
+// --h: 200;
+// --s: 70%;
+// --l: 50%;
+// --a: 1;
+// --hsl: hsl(var(--h) var(--s) var(--l) / var(--a));
