@@ -76,7 +76,7 @@ gulp.task('sass', function() {
     )
 });
 
-// Таск: Копирование картинок в папку дистрибутив (production-ready compiled version of your code)
+// Таск: Копирование картинок в папку дистрибутив (dist or build) (production-ready compiled version of your code)
 gulp.task('images', function() {
     return (
         gulp.src('./src/img/**/*')
