@@ -13,3 +13,6 @@ Wait until all packages from devDependencies from package.json are installed
 
 The web page will automatically open in the default browser
 
+## Demo
+[Click here](https://alfar0meo.github.io/gulp-starter/)
+
